@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Kota Malang</title>
+    <link rel="icon" type="image/png" href="icon telkom.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#D50000",
+                        dark: "#212121",
+                        light: "#F5F5F5",
+                        border: "#E0E0E0", // Warna abu-abu untuk bingkai
+                    },
+                    animation: {
+                        fadeIn: "fadeIn 1s ease-in-out",
+                        bounceOnce: "bounce 0.5s ease-in-out",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: "0" },
+                            "100%": { opacity: "1" }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-light text-dark">
+
+   <!-- Navbar -->
+   <header class='flex shadow-[0px_4px_16px_rgba(17,_17,_26,_0.1),_0px_8px_32px_rgba(17,_17,_26,_0.05)] py-4 px-12 sm:px-6 bg-white font-[sans-serif] min-h-[80px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center gap-5 w-full max-w-screen-xl mx-auto'>
+      <a href="index.html"><img src="logo telkom.jpg" alt="logo"
+        class='w-28' />
+      </a>
+
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+
+        <ul
+          class='lg:flex gap-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='mb-6 hidden max-lg:block'>
+            <a href="javascript:void(0)"><img src="logo telkom.jpg" alt="logo" class='w-40' />
+            </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='index.html'
+            class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>Beranda</a>
+          </li>      
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>Tentang Kami</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'>
+            <a href='project1.html'
+              class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>Prestasi</a>
+          </li> 
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>Blog</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>About</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+            class='hover:text-[#d3d3d3] text-[#000000] font-semibold block text-[15px]'>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+    <div class="container mx-auto mt-10 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <div class="md:col-span-3">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-500  border border-border">
+                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/htblsVlBnqw?si=7NjExswk7ZYMCvMC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <aside class="md:col-span-1 space-y-4">
+                <h2 class="text-xl font-semibold text-center mb-4">Daftar Prestasi</h2>
+                <div class="space-y-2">
+                    <button onclick="navigateTo('project1.html')"
+                        class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                        Prestasi 1
+                    </button>
+                    <button onclick="navigateTo('project2.html')"
+                        class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                        Prestasi 2
+                    </button>
+                    <button onclick="navigateTo('project3.html')"
+                        class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                        Prestasi 3
+                    </button>
+                    <button onclick="navigateTo('project4.html')"
+                        class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                        Prestasi 4
+                    </button>
+                    <button onclick="navigateTo('project5.html')"
+                        class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                        Prestasi 5
+                    </button>
+                    <button onclick="navigateTo('canva.html')"
+                    class="w-full bg-red-500 text-white transition-all duration-300 py-3 rounded-lg shadow-md transform hover:scale-105 active:animate-bounceOnce">
+                    Coba Canva
+                </button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 py-6 mt-12 text-center text-sm animate-fadeIn text-dark">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, et! Ad quo cum officiis aperiam recusandae vero nemo eius voluptas, dolorem saepe optio sunt corrupti, sequi consequuntur qui doloribus commodi!
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            console.log("Navigasi ke " + page);
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
